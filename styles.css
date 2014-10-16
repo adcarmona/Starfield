@@ -11,7 +11,13 @@ body {
     font-family: "Netto", sans-serif;
     text-align: center;
 }
-
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: gray;
+}
 #content {
     display: block;
     margin-left: auto;
@@ -21,7 +27,6 @@ body {
 header {
 	color: white;
 }
-
 footer {
 	font-style: italic;
 	font-size: 90%;
