@@ -37,7 +37,9 @@ void draw()
 	}
 	else if (warp == false)
 	{
-		background(0);
+		//background(0);
+		fill(0,0,0,50);
+		rect(0,0,500,500);
 	}
 	for (int i=0; i<Particles.length; i++)
  	{
