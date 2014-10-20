@@ -19,7 +19,7 @@ boolean warp = false;
 boolean mouseControl = false;
 public void setup()
 {
-	size(500,500);
+	size(800,800);
 	background(0);
 	Particles = new Particle[1000];
 	Particles[0] = new OddballParticle();
@@ -55,7 +55,7 @@ public void draw()
 	{
 		//background(0);
 		fill(0,0,0,50);
-		rect(0,0,500,500);
+		rect(0,0,800,800);
 	}
 	for (int i=0; i<Particles.length; i++)
  	{
@@ -73,19 +73,19 @@ class NormalParticle implements Particle
 		pSpeed = Math.random()*5;
 		pAngle = Math.PI*2*Math.random();
 		pSize = 5;
-		pX = 250;
-		pY = 250;
+		pX = 400;
+		pY = 400;
 	}
 	public void move()
 	{
 		pX = pX + Math.cos(pAngle) * pSpeed;
 		pY = pY + Math.sin(pAngle) * pSpeed;
-		if(pX > 510 || pX < -10 || pY > 510 || pY < -10)
+		if(pX > 810 || pX < -10 || pY > 810 || pY < -10)
 		{
 			if (mouseControl == false)
 			{
-				pX = 250;
-				pY = 250;
+				pX = 400;
+				pY = 400;
 			}	
 			else 
 			{
@@ -118,18 +118,18 @@ class OddballParticle implements Particle
 		oColor = 255;
 		oSpeed = Math.random()*5;
 		oAngle = Math.PI*2*Math.random();
-		oX = 250;
-		oY = 250;
+		oX = 400;
+		oY = 400;
 	}
 	public void move()
 	{
 		oAngle = Math.PI*2*Math.random();
 		oX = oX + Math.cos(oAngle) * oSpeed;
 		oY = oY + Math.sin(oAngle) * oSpeed;
-		if(oX > 510 || oX < -10 || oY > 510 || oY < -10)
+		if(oX > 810 || oX < -10 || oY > 810 || oY < -10)
 		{
-			oX = 250;
-			oY = 250;
+			oX = 400;
+			oY = 400;
 			oSpeed = Math.random()*5;
 			oColor = ((int)(Math.random()*255));
 		}
